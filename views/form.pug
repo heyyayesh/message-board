@@ -1,0 +1,9 @@
+extends layout 
+
+block content
+  h1 Add New Message
+  form(action="/new", method="post")
+    div: input(type="text", name="author" placeholder="Author")
+    div: input(type="text", name="message" placeholder="Message") 
+    button(type="submit") Submit 
+    button(type="reset") Reset

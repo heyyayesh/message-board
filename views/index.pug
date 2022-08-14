@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  h1= title
+
+  each msg in locals.messages
+    div 
+      h3 #{msg.user}
+      p #{msg.text}
+      p #{msg.added}
+
+  a(href="/new"): button Add New Message
